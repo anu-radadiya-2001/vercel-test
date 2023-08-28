@@ -30,8 +30,8 @@ const Hero = () => {
             </span>
           </h1>
           <h2 className="md:text-2xl text-xl text-[#666] dark:text-[#888888] leading-normal tracking-[-0.48px] w-full max-w-[780px] mx-auto text-center mb-16">
-            Vercel's frontend cloud gives developers the frameworks, workflows,
-            and infrastructure to build a faster, more personalized Web.
+    {"Vercel's frontend cloud gives developers the frameworks, workflows,
+            and infrastructure to build a faster, more personalized Web."}
           </h2>
           <div className="flex items-center gap-6 justify-center mb-[96px] sm:flex-row flex-col">
             <Link
