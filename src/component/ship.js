@@ -4,7 +4,6 @@ import Image from "next/image";
 import global from "../assets/images/global-icon.svg";
 import monitoring from "../assets/images/monitoring-icon.svg";
 import Draggable from "./Draggable";
-import Globe from "./Globe";
 
 
 const ship = () => { 
