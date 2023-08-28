@@ -7,7 +7,7 @@ import Frameworks from "../component/Frameworks";
 import Preview from "../component/Preview";
 import Ship from "../component/ship";
 import Scroll from "../component/scroll";
-import Footer from "../component/footer";
+import Footer from "../component/Footer";
 import Hero from "../component/Hero";  
 
 const Home = () => { 
