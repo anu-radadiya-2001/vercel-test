@@ -8,7 +8,7 @@ import SmoothScroll from "../component/SmoothScroll";
 const inter = Inter({ subsets: ["latin"] }); 
 // import { TweenLite } from 'gsap';
 
-export const metadata = {
+export const metaData = {
   title: "Vercel",
   description: "vercel demo next app",
 }; 
