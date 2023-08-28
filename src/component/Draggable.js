@@ -3,7 +3,7 @@ import createGlobe from "cobe";
 import { useEffect, useRef } from "react";
 import { useSpring } from "react-spring";
 
-const draggable = () => {
+const Draggable = () => {
   const canvasRef = useRef();
   const pointerInteracting = useRef(null);
   const pointerInteractionMovement = useRef(0);
@@ -118,4 +118,4 @@ const draggable = () => {
   );
 };
 
-export default draggable;
+export default Draggable;
