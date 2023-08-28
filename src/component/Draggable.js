@@ -58,7 +58,7 @@ const Draggable = () => {
     });
     setTimeout(() => (canvasRef.current.style.opacity = "1"));
     return () => globe.destroy();
-  }, []);
+  }, [ r ]);
 
   return (
     <>
