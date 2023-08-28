@@ -14,7 +14,7 @@ import configArrow from "../assets/images/config-arrow.svg";
 
 import Link from "next/link";
 
-const footer = () => {
+const Footer = () => {
   const [legal, setLegal] = useState(false);
 
   const productList = [
@@ -313,4 +313,4 @@ const footer = () => {
   );
 };
 
-export default footer;
+export default Footer;
