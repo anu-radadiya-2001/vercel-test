@@ -78,7 +78,7 @@ const ship = () => {
         </div>
         <div className="relative earth-rounde-overlay dark:invert">
         <div>
-          <Draggable />
+           {/* <Draggable  */}
             {/* <Globe /> */}
           </div>
         </div>
