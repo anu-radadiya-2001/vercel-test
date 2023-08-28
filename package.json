@@ -21,7 +21,6 @@
     "react": "^18.2.0",
     "react-dom": "18.2.0",
     "react-fast-marquee": "^1.6.0",
-    "react-globe": "^2.0.1",
     "react-spring": "^9.7.2",
     "react-three-fiber": "^6.0.13",
     "slick-carousel": "^1.8.1",
