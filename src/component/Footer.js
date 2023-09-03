@@ -171,7 +171,7 @@ const Footer = () => {
     },
   ];
 
-  const { theme, setTheme } = useTheme("light");
+  const { theme, setTheme } = useTheme(false);
   
   const handleThemeChange = () => {
     if (theme === "light") {
