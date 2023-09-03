@@ -175,17 +175,17 @@ const Footer = () => {
   
   const handleThemeChange = () => {
     if (theme === "light") {
-      setTheme("light");
+      setTheme("dark");
     } else {
-      setTheme("light");
+      setTheme("dark");
     }
   };
   
   const handleThemeDarkChange = () => {
     if (theme === "dark") {
-      setTheme("dark");
+      setTheme("light");
     } else {
-      setTheme("dark");
+      setTheme("light");
     }
   };
    
