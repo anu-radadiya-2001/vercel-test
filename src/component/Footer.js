@@ -171,21 +171,21 @@ const Footer = () => {
     },
   ];
 
-  const { theme, setTheme } = useTheme(false);
+  const { theme, setTheme } = useTheme(true);
   
   const handleThemeChange = () => {
     if (theme === "light") {
-      setTheme("dark");
+      setTheme("light");
     } else {
-      setTheme("dark");
+      setTheme("light");
     }
   };
   
   const handleThemeDarkChange = () => {
     if (theme === "dark") {
-      setTheme("light");
+      setTheme("dark");
     } else {
-      setTheme("light");
+      setTheme("dark");
     }
   };
    
