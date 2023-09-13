@@ -1,9 +1,27 @@
 import React from "react";
 import createGlobe from "cobe";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useSpring } from "react-spring";
 
 const Draggable = () => {
+  const [isDarkMode, setIsDarkMode] = useState(true);
+
+  var darkTheme = localStorage.getItem("theme");
+
+  useEffect(() => {
+    if (darkTheme === 'dark') {
+      setIsDarkMode(false)
+    } else {
+      setIsDarkMode(true)
+    }
+    console.log(setIsDarkMode)
+  }, [])
+  
+
+  const lightModeMarkerColor = [37.773972, 0.3, -122.431297];
+  const darkModeMarkerColor = [255, 255, 255]; 
+  const markerColor = isDarkMode ?  lightModeMarkerColor : darkModeMarkerColor;
+  console.log('markerColor', markerColor);
   const canvasRef = useRef();
   const pointerInteracting = useRef(null);
   const pointerInteractionMovement = useRef(0);
@@ -37,7 +55,9 @@ const Draggable = () => {
       mapSamples: 16000,
       mapBrightness: 6,
       baseColor: [1, 1, 1],
-      markerColor: [1, 0.5, 1],
+      // markerColor: [37.773972, 0.3, -122.431297],
+      markerColor,
+      darkModeMarkerColor,
       glowColor: [1, 1, 1],
       offset: [0, 0],
       markers: [
@@ -45,11 +65,11 @@ const Draggable = () => {
         { location: [40.7128, -74.006], size: 0.03 },
         { location: [2.7128, -70.006], size: 0.05 },
         { location: [10.7128, -60.006], size: 0.03 }, 
-        { location: [11.0321, -2.3216], size: 0.03 }, 
+        { location: [11.0321, -2.3216], size: 0.03 },
       ],
       onRender: (state) => {
         if (!pointerInteracting.current) {
-          phi += 0.010;
+          phi += 0.003;
         }
         state.phi = phi + r.get();
         state.width = width * 2;
@@ -63,12 +83,12 @@ const Draggable = () => {
   return (
     <>
       <div
+        className="relative mx-auto flex justify-center items-center !mt-14"
         style={{
           width: "500px",
           maxWidth: 1000,
           aspectRatio: 1,
-          margin: "auto",
-          position: "relative",
+          // margin: "auto",
         }}
       >
         <canvas
