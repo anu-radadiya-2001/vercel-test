@@ -14,13 +14,13 @@ const ship = () => {
         <div className="ship-sec rounded-full flex justify-center items-center">
           <span className="text-white dark:text-black">3</span>
         </div>
-        <span className="ship-text text-[32px] font-bold my-6">Ship</span>
+        <span className="ship-text text-[32px] font-bold lg:my-6 my-3">Ship</span>
         <h2 className="md:text-6xl text-[40px] font-bold dark:text-[#dfdfdf] md:text-left text-center">
           Delight every visitor
         </h2>
       </div>
-      <div className="flex max-w-[1200px] mx-auto lg:flex-row sm:flex-col flex-col lg:items-start items-center gap-y-8">
-        <div className="lg:mt-20 mt-10 md:max-w-[628px] w-full md:px-3 px-6 lg:text-left text-center">
+      <div className="flex max-w-[1200px] mx-auto lg:flex-row sm:flex-col flex-col lg:items-start items-center gap-y-8 mt-24 gap-[12px]">
+        <div className="lg:mt-20 sm:mt-10 mt-7 md:max-w-[628px] w-full md:px-3 px-6 lg:text-left text-center">
           <h3 className="text-[22px] text-[#171717] dark:text-[#ededed] font-semibold">
             Speed is critical to customers — and SEO
           </h3>
@@ -62,7 +62,7 @@ const ship = () => {
               Analyze logs, understand traffic and usage, and easily optimize
               your applications, without extra tooling or code.
             </p>
-            <div className="flex mt-8 sm:whitespace-nowrap border px-1 py-[6px] w-full max-w-fit lg:mx-0 mx-auto items-center gap-2 rounded-full bg-[#fafafa] dark:bg-[#111111] dark:border-[#333]">
+            <div className="flex mt-8 sm:whitespace-nowrap border px-2 py-[6px] w-full max-w-fit lg:mx-0 mx-auto items-center gap-2 rounded-full bg-[#fafafa] dark:bg-[#111111] dark:border-[#333]">
               <button className="bg-[#fc6d26] px-2 rounded-full text-white block text-xs mr-1 dark:text-black">
                 New
               </button>
@@ -75,10 +75,8 @@ const ship = () => {
          
           {/* ------------------------ */}
         </div>
-        <div className="relative earth-rounde-overlay dark:invert">
-        <div>
-            <Draggable />
-          </div>
+        <div className="relative earth-rounde-overlay dark:invert lg:w-[44%] 2xl:ml-40 flex justify-center items-center overflow-hidden">
+          <Draggable />
         </div>
       </div>
     </>
