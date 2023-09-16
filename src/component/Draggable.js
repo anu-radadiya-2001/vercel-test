@@ -4,23 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { useSpring } from "react-spring";
 
 const Draggable = () => {
-  const [isDarkMode, setIsDarkMode] = useState(true);
-
-  var darkTheme = localStorage.getItem("theme");
-
-  useEffect(() => {
-    if (darkTheme === 'dark') {
-      setIsDarkMode(false)
-    } else {
-      setIsDarkMode(true)
-    }
-    console.log(setIsDarkMode)
-  }, [])
-  
-
-  const lightModeMarkerColor = [37.773972, 0.3, -122.431297];
-  const darkModeMarkerColor = [255, 255, 255]; 
-  const markerColor = isDarkMode ?  lightModeMarkerColor : darkModeMarkerColor;
+  const markerColor = [37.773972, 0.3, -122.431297];
   console.log('markerColor', markerColor);
   const canvasRef = useRef();
   const pointerInteracting = useRef(null);
