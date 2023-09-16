@@ -41,7 +41,6 @@ const Draggable = () => {
       baseColor: [1, 1, 1],
       // markerColor: [37.773972, 0.3, -122.431297],
       markerColor,
-      darkModeMarkerColor,
       glowColor: [1, 1, 1],
       offset: [0, 0],
       markers: [
