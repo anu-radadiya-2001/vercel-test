@@ -14,9 +14,10 @@ const Draggable = () => {
     } else {
       setIsDarkMode(true)
     }
-    console.log('setIsDarkMode', darkTheme)
+    console.log(setIsDarkMode)
   }, [])
   
+
   const lightModeMarkerColor = [37.773972, 0.3, -122.431297];
   const darkModeMarkerColor = [255, 255, 255]; 
   const markerColor = isDarkMode ?  lightModeMarkerColor : darkModeMarkerColor;

@@ -182,7 +182,7 @@ const Header = () => {
                         </div>
                       ))}
                     </HeaderData>
-                    <div className="lg:group-hover:block absolute top-[30px] w-[565px] pt-3 group-hover:hidden lg:hidden hidden dark:backdrop-blur-sm dark:bg-black/80 rounded-xl">
+                    <div className="lg:group-hover:block absolute top-[30px] w-[558px] pt-3 group-hover:hidden lg:hidden hidden dark:backdrop-blur-sm dark:bg-black/80 rounded-xl">
                       <div className="flex flex-wrap w-full p-1.5 bg-white cursor-pointer border border-[#ebebeb] rounded-xl shadow-[0_50px_100px_-20px_rgba(0,0,0,0.12),0_30px_60px_-30px_rgba(0,0,0,0.15)] dark:bg-black dark:border-[#333] dark:bg-opacity-50">
                         {featuresList.map((item) => (
                           <div
