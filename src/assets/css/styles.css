@@ -464,7 +464,7 @@ html[data-theme="dark"] {
 }
 
 .earth-rounde-overlay {
-  transform: scale(2.75) translateX(-2%) translateY(7%);
+  transform: scale(2.2) translateX(-2%) translateY(7%);
 }
 
 @media (max-width: 1399px) {
