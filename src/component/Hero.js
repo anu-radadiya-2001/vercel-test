@@ -18,7 +18,7 @@ const Hero = () => {
     <>
       <section className="xl:py-20 lg:py-16  lg:mt-0 mt-14">
         <div className="container">
-          <h1 className="dark-color xl:text-[112px] lg:text-[80px] md:text-[90px] dark:text-[#EDEDED] -tracking-wider text-7xl justify-center items-center font-extrabold flex leading-none mb-10 lg:flex-row flex-col">
+          <h1 className="dark-color xl:text-[112px] lg:text-[80px] md:text-[90px] dark:text-[#EDEDED] -tracking-wider text-7xl justify-center items-center font-extrabold flex leading-none mb-11 lg:flex-row flex-col">
             <span className="animated-gradient-text develop-animated-text">
               <span className="develop-animated">Develop.</span>
             </span>
@@ -29,7 +29,7 @@ const Hero = () => {
               <span className="ship-animated">Ship.</span>
             </span>
           </h1>
-          <h2 className="md:text-2xl text-xl text-[#666] dark:text-[#888888] leading-normal tracking-[-0.48px] w-full max-w-[780px] mx-auto text-center mb-16">
+          <h2 className="md:text-2xl text-xl text-[#666] dark:text-[#888888] md:leading-[38px] tracking-[-0.48px] w-full max-w-[780px] mx-auto text-center mb-16">
             {"Vercel's frontend cloud gives developers the frameworks, workflows, and infrastructure to build a faster, more personalized Web."}
           </h2>
           <div className="flex items-center gap-6 justify-center mb-[96px] sm:flex-row flex-col">
@@ -59,7 +59,7 @@ const Hero = () => {
               <span className="absolute top-0 left-0 right-0 w-full h-full get-demo-animated-one"></span>
               <span className="absolute top-0 left-0 right-0 w-full h-full get-demo-animated-two"></span>
               <span className="absolute top-0 left-0 right-0 w-full h-full get-demo-animated-three"></span>
-              <span className="absolute top-[1px] bottom-[1px] left-[1px] right-[1px] w-[calc(100%-2px)] dark:bg-black dark:text-white h-[calc(100%-2px)] rounded-[7px] bg-white z-40 group-hover:bg-transparent transition-all duration-150"></span>
+              <span className="absolute top-[1px] bottom-[1px] left-[1px] right-[1px] w-[calc(100%-3px)] dark:bg-black dark:text-white h-[calc(100%-2px)] rounded-[7px] bg-white z-40 group-hover:bg-transparent transition-all duration-150"></span>
             </Link>
           </div>
           <div className="tracking-[0.2rem] text-xs text-[#666] dark:text-black font-bold uppercase text-center w-full mx-auto max-w-[900px]">

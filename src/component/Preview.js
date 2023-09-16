@@ -1,9 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import push from "../assets/images/pushdeploy.png";
+import push2 from "../assets/images/push2.png";
 import preview from "../assets/images/Automatipreviews.png";
 import preview2 from "../assets/images/preview-2.png";
 import collaborative from "../assets/images/Collaborative.png";
+import collaborative2 from "../assets/images/collaborativedark.png";
 import pushicon from "../assets/images/push-icon.png";
 import automation from "../assets/images/automaticicon.png";
 import Collaborativeicon from "../assets/images/collaborativeicon.png";
@@ -38,17 +40,22 @@ const Preview = () => {
         </p>
       </div>
       {/* first section code strat  */}
-      <div className="max-w-[1152px] mx-auto mt-24">
+      <div className="max-w-[1200px] mx-auto mt-24 px-6">
         <div className="flex flex-col justify-center">
           <p className="preview-line w-[2px] self-center h-[100px] md:hidden"></p>
           <span className="self-center w-2 h-2 rounded-full my-1 shadow-[0_0px_0px_1.5px_#999] z-10 md:hidden sm:block block"></span>
         </div>
-        <div className="flex justify-center md:items-start items-center sm:flex-col md:flex-row flex-col px-6 ">
-          <div className="lg:pr-[64px] sm:max-w-[48%] w-full">
+        <div className="flex justify-center md:items-start items-center sm:flex-col md:flex-row flex-col gap-y-10 ">
+          <div className="lg:pr-14 md:pr-7 md:max-w-[50%] sm:max-w-[70%] w-full">
             <Image
               src={push}
               alt="push"
-              className="relative rounded-md mr-2 w-full dark:invert"
+              className="relative rounded-md mr-2 w-full dark:hidden block"
+            />
+            <Image
+              src={push2}
+              alt="push"
+              className="relative rounded-md mr-2 w-full hidden dark:block"
             />
           </div>
           <div className="flex flex-col">
@@ -56,7 +63,7 @@ const Preview = () => {
             <span className="w-2 h-2 rounded-full my-1 shadow-[0_0px_0px_1.5px_#999] z-10"></span>
             <span className="border-[#999] self-center dark:border-[#444] border-dashed border-r-[1px] h-[399px] md:block sm:hidden hidden"></span>
           </div>
-          <div className="lg:px-[64px] md:pl-6 sm:max-w-[48%] w-full sm:order-[-1] md:order-1 order-[-1] sm:text-center md:text-left text-center md:mt-24 mt-5">
+          <div className="lg:pl-[59px] lg:pr-12 md:pl-6 md:max-w-[50%] sm:max-w-[70%] w-full sm:order-[-1] md:order-1 order-[-1] sm:text-center md:text-left text-center md:mt-24 mt-5">
             <div className="w-10 h-10 border border-[#eaeaea] dark:border-[#333333] dark:bg-[#333333] rounded-lg flex items-center justify-center sm:mx-auto md:mx-0 mx-auto">
               <Image
                 src={pushicon}
@@ -65,17 +72,15 @@ const Preview = () => {
               />
             </div>
             <h4 className="text-[22px] font-semibold my-2">Push to deploy</h4>
-            <p className="text-[#666] leading-7 dark:text-[#888888]">
+            <p className="text-[#666] leading-7 dark:text-[#888888] tracking-[-0.32px]">
               Every deploy automatically generates a shareable live preview site
               that stays up-to-date with your changes.
             </p>
           </div>
         </div>
-      </div>
       {/* second section code start */}
-      <div className="max-w-[1152px] mx-auto">
-        <div className="flex justify-center md:items-start items-center sm:flex-col md:flex-row flex-col px-6">
-          <div className="lg:pr-[64px] sm:max-w-[48%] w-full md:-translate-y-20 md:mt-0 mt-4">
+        <div className="flex justify-center md:items-start items-center sm:flex-col md:flex-row flex-col gap-y-10">
+          <div className="lg:pr-14 md:pr-7 md:max-w-[50%] sm:max-w-[70%]  w-full md:-translate-y-36 md:mt-0 mt-4">
             <Image
               src={preview}
               alt="preview"
@@ -92,7 +97,7 @@ const Preview = () => {
             <span className="w-2 h-2 rounded-full my-1 shadow-[0_0px_0px_1.5px_#999] z-10"></span>
             <span className="border-[#999] self-center border-dashed border-r-[1px] h-[399px] md:block sm:hidden hidden dark:border-[#444]"></span>
           </div>
-          <div className="lg:px-[64px] md:pl-6 md:max-w-[48%] w-full sm:order-[-1] md:order-1 order-[-1] sm:text-center md:text-left text-center md:mt-0 mt-6">
+          <div className="lg:pl-[59px] lg:pr-12 md:pl-6 md:max-w-[50%] sm:max-w-[70%] w-full sm:order-[-1] md:order-1 order-[-1] sm:text-center md:text-left text-center md:mt-0 mt-6">
             <div className="w-10 h-10 border border-[#eaeaea] dark:border-[#333333] dark:bg-[#333333] rounded-lg flex items-center justify-center sm:mx-auto md:mx-0 mx-auto">
               <Image
                 src={automation}
@@ -103,45 +108,47 @@ const Preview = () => {
             <h4 className="text-[22px] font-semibold my-2">
               Automatic Previews for every branch
             </h4>
-            <p className="text-[#666] leading-7 dark:text-[#888888]">
+            <p className="text-[#666] leading-7 dark:text-[#888888] tracking-[-0.32px]">
               Each new branch receives a live, production-like URL that everyone
               on your team can visit.
             </p>
           </div>
         </div>
-      </div>
       {/* third section code start  */}
-      <div className="max-w-[1152px] mx-auto">
-        <div className="flex justify-center md:items-start items-center sm:flex-col md:flex-row flex-col px-6">
-          <div className="lg:pr-[64px] sm:max-w-[48%] w-full md:-translate-y-24">
-            <Image
+      <div className="flex justify-center md:items-start items-center sm:flex-col md:flex-row flex-col gap-y-10">
+          <div className="lg:pr-14 md:pr-7 md:max-w-[50%] sm:max-w-[70%]  w-full md:-translate-y-36 md:mt-0 mt-4">
+          <Image
               src={collaborative}
               alt="collaborative"
-              className="relative rounded-md mr-2 w-full mt-6 dark:invert"
+              className="relative rounded-md mr-2 w-full mt-6 dark:hidden block"
+            />
+            <Image
+              src={collaborative2}
+              alt="collaborative"
+              className="relative rounded-md mr-2 w-full mt-6 hidden dark:block"
             />
           </div>
           <div className="flex flex-col">
             <span className="w-2 h-2 rounded-full my-1 shadow-[0_0px_0px_1.5px_#999] z-10 md:block sm:hidden hidden"></span>
-            <span className="collaborative-line self-center border-r-[1px] h-[500px] md:block sm:hidden hidden"></span>
+            <span className="collaborative-line self-center border-r-[1px] lg:h-[600px] h-[450px] md:block sm:hidden hidden"></span>
           </div>
-          <div className="sm:order-[-1] md:order-1 order-[-1] w-full sm:max-w-[48%]">
-            <div className="lg:pl-[64px] md:pl-6 h-fit sm:text-center md:text-left text-center md:mt-0 mt-6">
-              <div className="w-10 h-10 border border-[#eaeaea] dark:border-[#333333] dark:bg-[#333333] rounded-lg flex items-center justify-center sm:mx-auto md:mx-0 mx-auto">
-                <Image
+          <div className="lg:pl-[59px] lg:pr-12 md:pl-6 md:max-w-[50%] sm:max-w-[70%] w-full sm:order-[-1] md:order-1 order-[-1] sm:text-center md:text-left text-center md:mt-0 mt-6">
+            <div className="w-10 h-10 border border-[#eaeaea] dark:border-[#333333] dark:bg-[#333333] rounded-lg flex items-center justify-center sm:mx-auto md:mx-0 mx-auto">             
+              <Image
                   src={Collaborativeicon}
                   alt="next"
                   className="relative w-5 h-5 contrast-50 dark:invert"
                 />
-              </div>
-              <h4 className="text-[22px] font-semibold my-2">
+            </div>
+            <h4 className="text-[22px] font-semibold my-2">
                 Collaborative reviews on UI
               </h4>
-              <p className="text-[#666] dark:text-[#888888] leading-7 w-full md:max-w-[401px]">
+              <p className="text-[#666] dark:text-[#888888] leading-7 tracking-[-0.32px]">
                 Comment directly on components, layouts, copy, and more in real
                 context and real time, integrated seamlessly with GitHub and
                 Slack.
               </p>
-              <div className="flex items-center mt-8 xl:whitespace-nowrap border p-[6px] gap-1 dark:border-[#333] w-fit rounded-full bg-[#fafafa] dark:bg-[#111111]">
+              <div className="flex items-center mt-8 xl:whitespace-nowrap border p-[6px] gap-1 dark:border-[#333] w-fit md:ml-0 mx-auto rounded-full bg-[#fafafa] dark:bg-[#111111]">
                 <button className="bg-[#eb367f] px-2 rounded-full text-white dark:text-black text-xs flex justify-center items-center whitespace-nowrap">
                   New
                 </button>
@@ -152,9 +159,8 @@ const Preview = () => {
                   Commenting on Preview Deployments is now available →
                 </a>
               </div>
-            </div>
           </div>
-        </div>
+        </div>       
       </div>
     </div>
   );

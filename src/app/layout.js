@@ -1,11 +1,11 @@
 "use client";
 import "./globals.css";
 import "../assets/css/styles.css";
-import { Inter } from "next/font/google";
+// import { Inter } from "next/font/google";
 import Header from "../component/Header";
 import { ThemeProvider } from "next-themes";
 import SmoothScroll from "../component/SmoothScroll"; 
-const inter = Inter({ subsets: ["latin"] }); 
+// const inter = Inter({ subsets: ["latin"] }); 
 // import { TweenLite } from 'gsap';
 
 export const metaData = {
@@ -16,11 +16,11 @@ export const metaData = {
 export default function RootLayout({ children }) { 
   return (
     <html lang="en" className="scroll-smooth overflow-x-hidden" >
-      <body className={inter.className} >
+      <body >
         <Header />
         {/* <div ref={jsScrollRef}> */}
         <SmoothScroll>
-          <ThemeProvider enableSystem={"dark"} attribute="class" >
+          <ThemeProvider enableSystem={true} attribute="class" >
             {children}
           </ThemeProvider>  
         </SmoothScroll>
