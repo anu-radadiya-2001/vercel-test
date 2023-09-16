@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
         <Header />
         {/* <div ref={jsScrollRef}> */}
         <SmoothScroll>
-          <ThemeProvider enableSystem={'light'} attribute="class" >
+          <ThemeProvider theme={'light'} enableSystem={'light'} attribute="class" >
             {children}
           </ThemeProvider>  
         </SmoothScroll>
