@@ -171,7 +171,7 @@ const Footer = () => {
     },
   ];
 
-  const { theme, setTheme } = useTheme(true);
+  const { theme, setTheme } = useTheme("light");
   
   const handleThemeChange = () => {
     if (theme === "light") {
@@ -299,7 +299,7 @@ const Footer = () => {
               <button onClick={handleThemeDarkChange} className="rounded-full w-8 p-2 dark:bg-[#1a1a1a]">
                 <Image src={dark} alt="dark" className="mx-auto dark:invert" />
               </button>
-              <button onClick={handleThemeChange} className="rounded-full  p-1 dark:bg-transparent bg-[#f2f2f2] w-8">
+              <button onClick={handleThemeChange} className="rounded-full p-1 dark:bg-transparent bg-[#f2f2f2] w-8">
                 <Image src={lightmode} alt="lightmode" className="mx-auto dark:invert" />
               </button>
               <button className="w-8">
