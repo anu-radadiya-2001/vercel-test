@@ -423,20 +423,3 @@ html[data-theme="dark"] {
 .scrollbar-track-y {
   width: 4px !important;
 }
-.investirs-sec::after {
-  position: absolute;
-  content: "";
-  height: 1px;
-  background-color: #000;
-  color: black;
-  width: 100%;
-  opacity: 0;
-  bottom: -2px;
-  left: 0;
-}
-.investirs-sec:hover::after {
-  opacity: 1;
-}
-.bold-text {
-  word-spacing: -6px !important;
-}

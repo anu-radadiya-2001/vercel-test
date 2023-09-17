@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import { useEffect, useRef } from 'react';
+import "../assets/css/styles.css";
 import Vercel from "../component/Vercel-Journey";
 import Vercelway from "../component/vercel-way";
 import Frameworks from "../component/Frameworks";
