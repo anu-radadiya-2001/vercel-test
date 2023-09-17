@@ -5,7 +5,6 @@ import { useSpring } from "react-spring";
 
 const Draggable = () => {
   const markerColor = [37.773972, 0.3, -122.431297];
-  console.log('markerColor', markerColor);
   const canvasRef = useRef();
   const pointerInteracting = useRef(null);
   const pointerInteractionMovement = useRef(0);
