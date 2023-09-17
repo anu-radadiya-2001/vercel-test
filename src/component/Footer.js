@@ -11,6 +11,7 @@ import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import downArrow from "../assets/images/down-arrow.png";
 import configArrow from "../assets/images/config-arrow.svg";
+
 import Link from "next/link";
 
 const Footer = () => {
@@ -119,8 +120,7 @@ const Footer = () => {
     {
       id: 1,
       name: "About",
-      url: "/about",
-      
+      url: "/docs",
     },
     {
       id: 2,
@@ -171,7 +171,7 @@ const Footer = () => {
     },
   ];
 
-  const { theme, setTheme } = useTheme(true);
+  const { theme, setTheme } = useTheme("light");
   
   const handleThemeChange = () => {
     if (theme === "light") {
@@ -196,7 +196,7 @@ const Footer = () => {
   }, [theme]);
 
   return (
-    <div className="bg-[#fafafa] dark:!bg-[#111] px-4 border-t border-[#eaeaea] dark:border-[#333] footer-div">
+    <div className="bg-[#fafafa] dark:!bg-[#111] px-4 border-t border-[#eaeaea] dark:border-[#333] mt-24 footer-div">
       <div className="max-w-[1200px] w-full mx-auto py-16">
         <div className="flex md:flex-row sm:flex-col flex-col">
           <div className="max-w-[100%] w-full flex flex-col md:justify-start items-start">
@@ -299,7 +299,7 @@ const Footer = () => {
               <button onClick={handleThemeDarkChange} className="rounded-full w-8 p-2 dark:bg-[#1a1a1a]">
                 <Image src={dark} alt="dark" className="mx-auto dark:invert" />
               </button>
-              <button onClick={handleThemeChange} className="rounded-full  p-1 dark:bg-transparent bg-[#f2f2f2] w-8">
+              <button onClick={handleThemeChange} className="rounded-full p-1 dark:bg-transparent bg-[#f2f2f2] w-8">
                 <Image src={lightmode} alt="lightmode" className="mx-auto dark:invert" />
               </button>
               <button className="w-8">

@@ -75,7 +75,7 @@ const ship = () => {
          
           {/* ------------------------ */}
         </div>
-        <div className="relative earth-rounde-overlay dark:invert lg:w-[44%] 2xl:ml-40 flex justify-center items-center">
+        <div className="relative earth-rounde-overlay dark:invert lg:w-[44%] 2xl:ml-40 flex justify-center items-center overflow-hidden">
           <Draggable />
         </div>
       </div>

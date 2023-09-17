@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import devlopimg from "../assets/images/devlop-img.png";
+import devlopimg from "../assets/images/devlopimg.png";
 import devlopimg2 from "../assets/images/bg-pot.png";
 
 
@@ -25,20 +25,19 @@ const vercelway = () => {
         </p>
       </div>
       <div className="max-w-[1248px] mx-auto mt-20 flex px-6 lg:flex-row sm:flex-col flex-col">
-        <div className="max-w-[580px] mx-auto w-full">
+        <div className="lg:max-w-[670px] w-full">
           <Image
             src={devlopimg}
             alt="devlopimg"
-            className="relative rounded-md mr-2 w-full dark:invert block dark:hidden"
+            className="relative rounded-md mr-2 w-full dark:invert md:block hidden"
           />
            <Image
             src={devlopimg2}
             alt="devlopimg2"
-            className="relative rounded-md mr-2 w-full invert dark:invert-0 hidden dark:block"
+            className="relative rounded-md mr-2 w-full  invert dark:invert-0 md:hidden block"
           />
         </div>
-        <div className="sm:px-12 px-6 mt-14 lg:mt-0">
-        <div className="max-w-[488px] pb-4 mx-auto text-center lg:text-left">
+        <div className="max-w-[600px] sm:p-100 p-5 md:px-5 px-0 mx-auto text-center lg:text-left">
           <div className="w-10 h-10 border border-[#eaeaea] dark:border-[#333] dark:bg-[#333] rounded-lg flex items-center justify-center mx-auto lg:mx-0">
             <svg
               data-testid="geist-icon"
@@ -87,7 +86,8 @@ const vercelway = () => {
             Easy integration with your backend
           </h4>
           <p className="text-[#666] dark:text-[#888888] leading-7">
-            {"Connect your pages to any data source, headless CMS, or API and make it work in everyone’s dev environment."}
+            Connect your pages to any data source, headless CMS, or API and make
+            it work in everyone’s dev environment.
           </p>
           {/* -------------------- */}
           <div className="w-10 h-10 border border-[#eaeaea] dark:border-[#333] dark:bg-[#333] rounded-lg flex items-center justify-center mt-14 mx-auto lg:mx-0">
@@ -115,7 +115,6 @@ const vercelway = () => {
             perfectly on localhost.
           </p>
           {/* --------------------- */}
-        </div>
         </div>
       </div>
     </div>
