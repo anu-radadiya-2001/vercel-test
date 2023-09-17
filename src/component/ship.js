@@ -68,14 +68,14 @@ const ship = () => {
               </button>
               <a href="#0" className="text-sm text-[#666] dark:text-[#888888] md:block hidden">
                 Monitoring is now available for Pro and Enterprise customers → </a>
-                <a href="#0" className="text-sm text-[#666] dark:text-[#888888] md:hidden block">
+                <a href="#0" className="sm:text-sm text-xs text-[#666] dark:text-[#888888] md:hidden block">
                  now available for Pro and Enterprise customers → </a>
             </div>
           </div>
          
           {/* ------------------------ */}
         </div>
-        <div className="relative earth-rounde-overlay dark:invert lg:w-[44%] 2xl:ml-40 flex justify-center items-center overflow-hidden">
+        <div className="relative earth-rounde-overlay dark:invert lg:w-[44%] 2xl:ml-40 flex justify-center items-center">
           <Draggable />
         </div>
       </div>

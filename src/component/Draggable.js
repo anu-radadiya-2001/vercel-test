@@ -65,10 +65,8 @@ const Draggable = () => {
   return (
     <>
       <div
-        className="relative mx-auto flex justify-center items-center !mt-14 overflow-hidden"
+        className="relative mx-auto flex justify-center items-center !mt-14"
         style={{
-          width: "500px",
-          maxWidth: 1000,
           aspectRatio: 1,
           // margin: "auto",
         }}
