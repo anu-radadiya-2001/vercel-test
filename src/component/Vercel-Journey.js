@@ -13,25 +13,25 @@ import gitlab from '../assets/images/gitlab.svg'
 
 const VercelJourney = () => {
   return (
-    <div className="pt-24 mx-auto">
+    <div className="lg:pt-24 pt-16 mx-auto mb-24 relative z-[99] bg-white dark:bg-black">
       <div className="text-center">
         <span className="mb-12 text-[#666666] dark:text-[#888888] tracking-[0.2rem] font-bold text-xs uppercase">
           Begin Your Vercel Journey
         </span>
       </div>
-      <div className="flex gap-8 w-full mx-auto max-w-[1060px] mt-12 md:flex-row flex-col px-6">
-        <div className="lg:max-w-[520px] w-full max-w-[520px] mx-auto md:border border-[#eaeaea] dark:border-[#333] md:px-6 py-8 rounded-lg shadow-[0_8px_30px_rgba(0,0,0,.12)]">
-          <h2 className="sm:text-2xl text-lg text-[#171717] dark:text-[#EDEDED] font-semibold mb-3 text-center md:text-left">
+      <div className="flex gap-8 w-full mx-auto max-w-[1088px] lg:mt-12 mt-4 md:flex-row flex-col px-6">
+        <div className="lg:max-w-[520px] w-full max-w-[520px] mx-auto sm:border border-[#eaeaea] dark:border-[#333] sm:px-6 py-8 rounded-lg sm:shadow-[0_8px_30px_rgba(0,0,0,.12)]">
+          <h2 className="text-2xl text-[#171717] dark:text-[#EDEDED] font-semibold mb-3 text-center md:text-left">
             Import Git Repository
           </h2>
-          <div className="border border-[#eaeaea] dark:border-[#333] bg-[#fafafa] dark:bg-[#111111] flex justify-center items-center py-[73px] rounded-md flex-col mb-6 sm:px-2 p-12 mt-4">
+          <div className="border border-[#eaeaea] dark:border-[#333] bg-[#fafafa] dark:bg-[#111111] flex justify-center items-center md:py-[73px] rounded-md flex-col mb-6 sm:p-8 py-12 px-6 mt-4">
             <p className="text-center text-sm text-[#444444]  dark:text-[#999999] font-normal">
               Select a Git provider to import an existing project from a Git
               Repository.
             </p>
             <a
               href="#0"
-              className="text-sm sm:text-base mt-8 flex bg-[#24292e] max-w-[320px] w-full p-2 text-[#fff] items-center justify-center rounded-md hover:bg-[#555] duration-700"
+              className="text-sm sm:text-base mt-8 flex bg-[#24292e] max-w-[320px] w-full p-[10px] text-[#fff] items-center justify-center rounded-md hover:bg-[#555] duration-700"
             >
               <svg
                 className="mr-2"
@@ -46,38 +46,38 @@ const VercelJourney = () => {
                   fillRule="nonzero"
                 ></path>
               </svg>
-              <span className="md:block hidden">
+              <span className="sm:block hidden text-sm">
                 Continue with GitHub
               </span>
-              <span className="md:hidden block">GitHub</span>
+              <span className="sm:hidden block text-sm">GitHub</span>
             </a>
             <a
               href="#0"
-              className="text-sm sm:text-base mt-2 flex bg-[#6b4fbb] max-w-[320px] w-full p-2 text-[#fff] items-center justify-center rounded-md hover:bg-[#8367D3] duration-700"
+              className="text-sm sm:text-base mt-2 flex bg-[#6b4fbb] max-w-[320px] w-full p-[10px] text-[#fff] items-center justify-center rounded-md hover:bg-[#8367D3] duration-700"
             >
               <Image
                 src={gitlab}
                 alt="gitlab"
                 className="relative rounded-md mr-2"
               />
-             <span className="md:block hidden">
+             <span className="sm:block hidden text-sm">
                 Continue with GitLab
               </span>
-              <span className="md:hidden block">GitLab</span>
+              <span className="sm:hidden block text-sm">GitLab</span>
             </a>
             <a
               href="#0"
-              className="text-sm sm:text-base mt-2 flex bg-[#0052cc] max-w-[320px] w-full p-2 text-[#fff] items-center justify-center rounded-md hover:bg-[#1668E2] duration-700"
+              className="text-sm sm:text-base mt-2 flex bg-[#0052cc] max-w-[320px] w-full p-[10px] text-[#fff] items-center justify-center rounded-md hover:bg-[#1668E2] duration-700"
             >
               <Image
                 src={bucket}
                 alt="bucket"
                 className="relative rounded-tl-md rounded-tr-md mr-2"
               />
-              <span className="md:block hidden">
+              <span className="sm:block hidden text-sm">
                 Continue with Bitbucket
               </span>
-              <span className="md:hidden block">Bitbucket</span>
+              <span className="sm:hidden block text-sm">Bitbucket</span>
             </a>
           </div>
           <a href="#0" className="text-[#444444] dark:text-[#999999] text-sm">
